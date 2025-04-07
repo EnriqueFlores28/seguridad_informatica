@@ -4,7 +4,8 @@ def generar_hashes(texto):
     hashes = {
         "MD5": hashlib.md5(texto.encode()).hexdigest(),
         "SHA-1": hashlib.sha1(texto.encode()).hexdigest(),
-        "SHA-256": hashlib.sha256(texto.encode()).hexdigest()
+        "SHA-256": hashlib.sha256(texto.encode()).hexdigest(),
+        "SHA-512": hashlib.sha512(texto.encode()).hexdigest()
     }
     return hashes
 
